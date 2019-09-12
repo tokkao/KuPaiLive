@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_default_pic" />
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_gift"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="安排一下"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gift_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/img_xz"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

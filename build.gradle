@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.5.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        //避免butterKnife在library中使用出现id冲突
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.0.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://dl.bintray.com/jenly/maven' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext{
+    javaVersion = org.gradle.api.JavaVersion.VERSION_1_8
+    buildToolsVersion = "28.0.3"
+    compileVersion = 28
+    minSdk = 19
+    targetSdk = 28
+    db_code = 1
+    supportVersion = "25.3.1"
+    version_code= 5
+    version_name="1.0.5"
+}

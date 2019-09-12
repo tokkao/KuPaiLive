@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="287dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llyt_guard_seat_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_top_white_radius10_ffffff"
+                android:orientation="vertical"
+                android:paddingLeft="21dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="21dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_1A1A1A"
+                        android:text="@string/guard_seat"/>
+                    <TextView
+                        android:id="@+id/tv_guard_prerogative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_666666"
+                        android:text="@string/guard_prerogative"/>
+                </RelativeLayout>
+
+
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/refresh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                        <include layout="@layout/layout_view_no_data"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rlv_guard_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </RelativeLayout>
+
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/llyt_guard_seat_list"
+                android:background="@drawable/shape_bottom_red_radius10_ff6261"
+                android:gravity="center"
+                android:text="@string/recharge_guard"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

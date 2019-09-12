@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:text="@string/upload_avatar"
+        android:textColor="@color/color_666666"
+        android:textSize="16sp" />
+
+    <com.benben.commoncore.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="22dp"
+        android:src="@mipmap/icon_upload_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="77dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/icon_take_photo"
+            android:drawablePadding="12dp"
+            android:gravity="center_horizontal"
+            android:text="@string/take_photo" />
+
+        <TextView
+            android:id="@+id/tv_select_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:drawableTop="@mipmap/icon_select_photo"
+            android:drawablePadding="12dp"
+            android:gravity="center_horizontal"
+            android:text="@string/select_photo" />
+    </LinearLayout>
+</LinearLayout>

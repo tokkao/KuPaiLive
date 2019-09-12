@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="3dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="3dp">
+        <!--android:background="@drawable/shape_half_transparent_3radius_4c000000"-->
+
+        <ImageView
+            android:id="@+id/iv_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:src="@mipmap/icon_level_0" />
+
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_user_level"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:shadowColor="#4d000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="铿锵玫瑰：哟，不错啊 "
+            android:textColor="@color/text_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

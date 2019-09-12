@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal">
+
+        
+        <com.benben.commoncore.widget.CircleImageView
+            android:id="@+id/civ_user_avatar"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/icon_default_avatar"/>
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="14dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:maxEms="8"
+            android:text="Pooma卜马"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_guard_name"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_red_radius3_ff6261"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="金牌"
+            android:paddingRight="9dp"
+            android:paddingLeft="9dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="10sp" />
+
+
+
+</LinearLayout>

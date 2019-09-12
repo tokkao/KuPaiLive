@@ -1,0 +1,1 @@
+include ':app',':benbencommoncore',  ':updateapputils',':easemob_lib',':wheelview',':pickerview',':hiframeanimationlib',':flutterlayoutlib'

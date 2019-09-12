@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="17dp"
+            android:paddingRight="13dp">
+
+            <com.benben.commoncore.widget.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/icon_default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="- -"
+                android:singleLine="true"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额："
+                android:textColor="@color/color_666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlv_diamond_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginTop="15dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/pay_method"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@mipmap/icon_alipay"
+            android:drawableRight="@drawable/selector_checkbox_select_status"
+            android:drawablePadding="13dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="14dp"
+            android:text="@string/alipay"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_wxpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@mipmap/icon_wxpay"
+            android:drawableRight="@drawable/selector_checkbox_select_status"
+            android:drawablePadding="13dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="14dp"
+            android:text="@string/wxpay"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_top_red_radius8_ff6261"
+        android:text="@string/go_pay"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="15sp" />
+</RelativeLayout>

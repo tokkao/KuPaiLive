@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_root"
+    android:layout_width="match_parent"
+    android:background="#cc000000"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xTablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:xTabIndicatorColor="@color/color_FF6261"
+            app:xTabIndicatorHeight="3dp"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabPaddingStart="10dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="@color/color_FF6261"
+            app:xTabSelectedTextSize="18sp"
+            app:xTabTextColor="@color/color_FFFFFF"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextSize="16sp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@mipmap/icon_close_live" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <!--底部操作按钮-->
+    <LinearLayout
+        android:id="@+id/llyt_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_black_circle_7f000000">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_editor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/shape_black_circle_7f000000">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_collection" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_sharing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/shape_black_circle_7f000000">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_sharing" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_contribu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/shape_black_circle_7f000000">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_contribu" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/icon_gift" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

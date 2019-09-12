@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/notice_content"
+        android:textColor="@color/color_000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_notice"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/please_enter"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:maxLength="250"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_CCCCCC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:gravity="right"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="15dp"
+        android:text="0/250"
+        android:textColor="@color/color_999999"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_red_radius8_ff6261"
+        android:text="@string/save"
+        android:textColor="@color/text_white"
+        android:textSize="15sp" />
+</LinearLayout>

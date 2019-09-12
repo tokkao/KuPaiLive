@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/half_transparent_bg"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <com.benben.kupaizhibo.widget.LoveLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+            <View
+                android:id="@+id/heart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </View>
+
+            <!--top信息-->
+            <RelativeLayout
+                android:id="@+id/rlyt_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="17dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp">
+
+                <com.benben.commoncore.widget.CircleImageView
+                    android:id="@+id/civ_user_photo"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_avatar"
+                    app:civ_border_color="@color/white_bg"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/civ_user_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/civ_user_photo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:text="- -"
+                        android:textColor="@color/text_white"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_other_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="位置  粉丝"
+                        android:textColor="@color/text_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@mipmap/icon_close_live" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_guanzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:layout_toLeftOf="@id/rlyt_close"
+                    android:background="@drawable/shape_red_radius12_ff6261"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="7dp">
+
+                    <TextView
+                        android:id="@+id/tv_guanzhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_follow"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlyt_top"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+
+                <TextView
+                    android:id="@+id/tv_viewer_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_into_grey"
+                    android:textColor="@color/color_FFFFFF" />
+
+            </LinearLayout>
+
+            <com.benben.kupaizhibo.widget.RollAdsLayout
+                android:id="@+id/roll_ads_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/rlyt_top"
+                android:layout_centerHorizontal="true"
+                android:minWidth="80dp"
+                android:visibility="invisible" />
+
+            <!--小礼物动画-->
+            <cn.qssq666.giftmodule.periscope.GiftAnimLayout
+                android:id="@+id/galt_little_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rlv_chat_info"
+                android:layout_marginBottom="30dp" />
+
+            <ImageView
+                android:id="@+id/iv_guard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlyt_top"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/icon_guard"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv_chat_info"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_above="@id/llyt_options"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="80dp" />
+
+            <com.king.view.flutteringlayout.view.HeartHonorLayout
+                android:id="@+id/flutteringLayout"
+                android:layout_width="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="100dp"
+                app:duration="3000"
+                app:enter_duration="300"
+                app:scale="1.0"/>
+            <!--底部操作按钮-->
+            <LinearLayout
+                android:id="@+id/llyt_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_black_circle_7f000000">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="19dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_editor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:background="@drawable/shape_black_circle_7f000000">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_collection" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_sharing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:background="@drawable/shape_black_circle_7f000000">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_sharing" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_contribu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:background="@drawable/shape_black_circle_7f000000">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_contribu" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/iv_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:src="@mipmap/icon_gift" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_editor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_FFFFFF"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:visibility="gone"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_input_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/color_999999"
+                    android:textColor="@color/color_000000"
+                    android:paddingLeft="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:background="@drawable/shape_grey_radius4_f7f7f7"
+                    android:layout_height="match_parent"
+                    android:hint="@string/enter_the_content"
+                    android:imeOptions="actionSend" />
+                <Button
+                    android:id="@+id/btn_send_msg"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_blue_radius4_4d8cff"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="15sp"
+                    android:text="@string/send"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <org.limlee.hiframeanimationlib.FrameAnimationView
+            android:id="@+id/frame_animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </org.limlee.hiframeanimationlib.FrameAnimationView>
+
+    </FrameLayout>
+
+</LinearLayout>

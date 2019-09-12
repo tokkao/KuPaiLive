@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.benben.kupaizhibo.widget.NoScrollViewPager
+        android:id="@+id/vpMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+    </com.benben.kupaizhibo.widget.NoScrollViewPager>
+
+    <LinearLayout
+        android:id="@+id/llyt_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_FFFFFF"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_main_tab_home_bg"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:text="@string/main_home"
+            android:textColor="@color/color_FF6261"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_follow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_main_tab_follow_bg"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:text="@string/main_follow"
+            android:textColor="@color/color_737373"
+            android:textSize="9sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_open_live"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_home_open_live_btn_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_open_live" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlyt_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.benben.commoncore.widget.badgeview.BGABadgeTextView
+                android:id="@+id/tv_tab_message"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/selector_main_tab_message_bg"
+                android:gravity="center"
+                android:paddingTop="7dp"
+                android:text="@string/main_message"
+                android:textColor="@color/color_737373"
+                android:textSize="9sp"
+                app:badge_horizontalMargin="0dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_main_tab_mine_bg"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:text="@string/main_mine"
+            android:textColor="@color/color_737373"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

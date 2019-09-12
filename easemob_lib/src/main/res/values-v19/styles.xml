@@ -1,0 +1,8 @@
+<resources>
+    <!-- 19 开始有 android:windowTranslucentStatus 这个属性-->
+    <style name="MyTranslucentTheme" parent="MyAppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

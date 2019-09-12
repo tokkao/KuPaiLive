@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benbencommoncore/benbencommoncore.iml" filepath="$PROJECT_DIR$/benbencommoncore/benbencommoncore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easemob_lib/easemob_lib.iml" filepath="$PROJECT_DIR$/easemob_lib/easemob_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flutterlayoutlib/flutterlayoutlib.iml" filepath="$PROJECT_DIR$/flutterlayoutlib/flutterlayoutlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hiframeanimationlib/hiframeanimationlib.iml" filepath="$PROJECT_DIR$/hiframeanimationlib/hiframeanimationlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kupaizhibo.iml" filepath="$PROJECT_DIR$/kupaizhibo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updateapputils/updateapputils.iml" filepath="$PROJECT_DIR$/updateapputils/updateapputils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_F5F5F5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_bg"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/live_title"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_biaoti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/live_enter_title"
+                android:singleLine="true"
+                android:textColor="@color/color_000000"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/live_time"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_tv_biaoqian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_pack_bottom"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@string/live_start_now"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textColor="@color/color_000000"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/live_category"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_tv_huati"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_pack_bottom"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@string/live_cate_name"
+                android:inputType="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/live_public_location"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sb_pub_location"
+                android:layout_gravity="center_vertical"
+                app:sb_checked="true"
+                app:sb_checked_color="@color/color_5DC75D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sb_show_indicator="false"
+                app:sb_background="#C2C2C2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="密码"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="请输入6位房间密码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/color_000000"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/live_select_cover"
+                android:textColor="#ff333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_fengmian"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="18dp"
+            android:src="@mipmap/icon_upload_image" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_create_live"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/live_confirm"
+            android:textSize="16sp"
+            android:textColor="@color/color_FFFFFF"
+            android:background="@drawable/shape_red_radius8_ff6261"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,334 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="MissingTranslation">
+    <string name="app_name">酷拍直播</string>
+
+    <!--公共-->
+    <string name="cozy_tips">温馨提示</string>
+    <string name="positive">确定</string>
+    <string name="negative">取消</string>
+    <string name="please_login_first">您还没有登录，请先登录！</string>
+    <string name="server_exception">服务器异常</string>
+    <string name="main_home">首页</string>
+    <string name="main_mine">我的</string>
+    <string name="main_message">消息</string>
+    <string name="main_follow">关注</string>
+    <string name="press_again_exit_app">再按一次退出程序</string>
+    <string name="close_success">关闭成功！</string>
+    <string name="no_data">暂时无数据~</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_confirm">确定</string>
+    <string name="stay_tuned">敬请期待</string>
+    <string name="keyword_not_null">搜索内容不能为空</string>
+    <string name="loading">加载中…</string>
+    <string name="not_yet_live_stay_tuned">暂未开播&#160;敬请期待</string>
+    <string name="no_permission_create_live">暂无权限开播</string>
+    <string name="need_real_name_auth">开启家长控制模式需要实名认证</string>
+    <string name="immediately_go_to_authentication">立即前往认证</string>
+    <string name="open_control_need_authentication">开启家长控制模式,需要实名认证</string>
+    <string name="go_to_authentication">前往认证</string>
+    <string name="again_authentication">重新认证</string>
+    <string name="check_authentication">前往查看</string>
+    <string name="skip">跳过</string>
+    <string name="click_to_enter">点击进入</string>
+    <string name="version_code">版本号:%1$s</string>
+    <string name="copy_right">版权所有©2018-2020&#160;&#160;湖北酷拍科技有限公司</string>
+    <string name="permission_recording">录音</string>
+    <string name="permission_camera">相机</string>
+    <string name="permission_storage">存储</string>
+    <string name="permission_phone">电话权限</string>
+    <string name="permission_need_read_phone_info">需要读取本机识别码信息</string>
+    <string name="permission_authorize">请先授权</string>
+    <string name="hint_search">搜索</string>
+    <string name="tips">提示</string>
+    <string name="balance_not_enough">钻石不足，请充值</string>
+
+    <!--首页-->
+    <string name="home_live">直播</string>
+    <string name="home_one_to_one">1v1</string>
+
+    <!--消息-->
+    <string name="message_system_msg">系统消息</string>
+    <string name="message_type_image">[图片]</string>
+    <string name="message_type_video">[视频]</string>
+    <string name="message_type_audio">[音频]</string>
+    <string name="message_type_file">[文件]</string>
+    <string name="message_type_location">[位置]</string>
+    <string name="message_type_unknown">[未知]</string>
+
+    <!--开启直播-->
+    <string name="live_create_live">开启直播</string>
+    <string name="live_title">标题</string>
+    <string name="live_time">时间</string>
+    <string name="live_category">分类</string>
+    <string name="live_enter_title">输入标题</string>
+    <string name="live_start_now">立即开始</string>
+    <string name="live_three_min_later">3分钟后</string>
+    <string name="live_five_min_later">5分钟后</string>
+    <string name="live_ten_min_later">10分钟后</string>
+    <string name="live_cate_name">分类名称</string>
+    <string name="live_public_location">公开定位</string>
+    <string name="live_select_cover">选择封面</string>
+    <string name="live_confirm">提交</string>
+    <string name="live_pls_enter_title">请输入标题</string>
+    <string name="live_pls_select_time">请选择时间</string>
+    <string name="live_pls_select_cate">请选择分类</string>
+    <string name="live_pls_select_cover">请选择封面</string>
+    <string name="live_start">开始直播</string>
+
+    <!--登录-->
+    <string name="enter_the_phone_number">请输入手机号</string>
+    <string name="enter_the_password">请输入密码(6~12)位</string>
+    <string name="login">登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="invitation_code">邀请码</string>
+    <string name="enter_the_new_pwd">请输入新密码</string>
+    <string name="confirm_new_pwd_again">再次确认新密码</string>
+    <string name="confirm_pwd_again">再次确认密码</string>
+    <string name="enter_the_invitation_code">请输入邀请码</string>
+    <string name="register_account">注册账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="password_modify">密码修改</string>
+    <string name="quick_login">快捷登录</string>
+    <string name="iphone_number_not_null">手机号不能为空！</string>
+    <string name="password_not_null">密码不能为空!</string>
+    <string name="invitation_code_not_null">邀请码不能为空!</string>
+    <string name="user_not_exist_please_go_register">用户不存在,请先注册!</string>
+    <string name="verification_code_login">验证码登录</string>
+    <string name="password_login">密码登录</string>
+    <string name="login_successful">登录成功！</string>
+    <string name="get_device_number_failed">获取设备编号失败！</string>
+    <string name="get_verification_code_first">请先获取验证码！</string>
+    <string name="pwd_cant_include_blank">密码不能包含空格字符</string>
+    <string name="mobile_cant_include_blank">手机号不能包含空格字符</string>
+    <string name="pwd_no_same">两次密码不一致</string>
+    <string name="pwd_modify_successful">密码修改成功</string>
+    <!--注册-->
+    <string name="register">注册</string>
+    <string name="register_agreement">注册协议</string>
+    <string name="new_user_register">新用户注册</string>
+    <string name="enter_the_email">请输入电子邮箱</string>
+    <string name="enter_the_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="click_registration_agreement">点击注册即默认同意</string>
+    <string name="user_registration_agreement">《用户注册协议》</string>
+    <string name="email_not_null">电子邮箱不能为空！</string>
+    <string name="verification_code_not_null">验证码不能为空！</string>
+    <string name="resend_verification_code">秒后可重新发送</string>
+    <string name="password_length">密码的长度应为6~12个字符</string>
+    <string name="nickname_length">昵称的长度不能超过8个字符</string>
+    <string name="hobby_length">爱好的长度不能超过25个字符</string>
+    <string name="enter_the_right_mobile">请输入正确的手机号</string>
+    <string name="enter_the_right_id_number">请输入正确的身份证号码</string>
+    <!--找回密码-->
+    <string name="retrieve_password">找回密码</string>
+    <string name="enter_the_current_phone_number">请输入当前手机号</string>
+    <string name="confirm_new_password">请确认新密码</string>
+    <string name="confirm">提交</string>
+    <string name="affirmance">确认</string>
+
+    <!--绑定手机号-->
+    <string name="new_phone_number">新手机号</string>
+    <string name="bind_phone_number">绑定手机号</string>
+    <string name="update_phone_number">更改手机号</string>
+    <string name="enter_the_new_phone_number">请输入新手机号</string>
+    <string name="bind_successful">绑定成功</string>
+    <string name="bind_failed">绑定失败，请重试</string>
+    <!--实名认证 主播认证-->
+    <string name="real_name_authentication">实名认证</string>
+    <string name="anchor_authentication">主播认证</string>
+    <string name="name">姓名</string>
+    <string name="enter_the_id_number">请输入身份证号</string>
+    <string name="enter_the_name">请输入姓名</string>
+    <string name="id_number">身份证号</string>
+    <string name="id_number_not_null">身份证号不能为空</string>
+    <string name="name_not_null">姓名不能为空</string>
+    <string name="select_identity_type">选择身份类别</string>
+    <string name="upload_file">上传附件</string>
+    <string name="authentication_description">认证说明</string>
+    <string name="add_image">添加图片</string>
+    <string name="please_select_image">请选择图片</string>
+    <string name="wait_authentication">待审核</string>
+    <string name="authentication_failed">认证失败</string>
+    <string name="authentication_success">认证成功</string>
+    <string name="most_choose_nine_photo">最多选择9张照片</string>
+
+    <!--完善信息-->
+    <string name="perfect_info">完善您的信息</string>
+    <string name="write_real_info">填写真实信息可避免错过专属福利哦~</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="next_step">下一步</string>
+    <string name="man">男士</string>
+    <string name="woman">女士</string>
+    <string name="select_avatar">选择头像</string>
+    <string name="upload_avatar">上传头像</string>
+    <string name="take_photo">拍摄</string>
+    <string name="select_photo">图片</string>
+    <string name="notice">公告</string>
+    <string name="notice_content">公告内容</string>
+    <string name="please_enter">请输入…</string>
+    <string name="save">保存</string>
+    <string name="select_image_cancel">选择图片取消</string>
+    <string name="select_image_fail">选择图片失败</string>
+    <string name="please_select_avatar">请先选择头像</string>
+
+
+    <!--个人中心-->
+    <string name="mine_man">男</string>
+    <string name="mine_woman">女</string>
+    <string name="mine_year">年</string>
+    <string name="mine_month">月</string>
+    <string name="mine_day">日</string>
+    <string name="not_login">未登录</string>
+    <string name="user">用户</string>
+    <string name="age">%1$s岁</string>
+    <string name="user_id">ID&#160;%1$s</string>
+    <string name="follow">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="my_diamond">我的钻石&#160;&#160;%1$s</string>
+    <string name="go_recharge">去充值</string>
+    <string name="personal_info">个人资料</string>
+    <string name="my_level">我的等级</string>
+    <string name="my_reward">我的打赏</string>
+    <string name="my_sharing">我的分享</string>
+    <string name="apply_anchor">申请主播</string>
+    <string name="setting">设置</string>
+    <string name="parental_control_mode">家长控制模式</string>
+    <string name="modify_background">修改背景</string>
+    <string name="phone_album">手机相册</string>
+    <string name="my_follow">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+
+    <!--直播-->
+    <string name="add_follow">+关注</string>
+    <string name="followed">已关注</string>
+    <string name="fans_number">%1$s粉丝</string>
+    <string name="viewer_number">%1$s&#160;人观看</string>
+    <string name="enter_the_content">请输入内容</string>
+    <string name="send">发送</string>
+    <string name="home_page">TA的主页</string>
+    <string name="private_message">私信</string>
+    <string name="qq">QQ</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="friends_moments">朋友圈</string>
+    <string name="we_chat">微信</string>
+    <string name="sina_weibo">微博</string>
+    <string name="coin_balance">钻石:%1$s</string>
+    <string name="present">赠送</string>
+    <string name="coin">钻石</string>
+    <string name="live_profit">直播收益:%1$s钻石</string>
+    <string name="get_fans">获得粉丝:%1$s人</string>
+    <string name="viewer_total">观看人数累计:%1$s人</string>
+    <string name="live_total_time">累计时长:%1$s</string>
+    <string name="congratulations_your_getting">恭喜您获得</string>
+    <string name="select_beauty_level">选择美颜级别</string>
+    <string name="whitening_level">美白</string>
+    <string name="beauty_level">美颜</string>
+    <string name="confirm_end_of_live">是否确认结束直播？</string>
+    <string name="end_of_live">结束直播</string>
+    <string name="cant_send_empty_message">不能发送空消息</string>
+    <string name="recharge_guard">开通守护</string>
+    <string name="guard_prerogative">守护特权</string>
+    <string name="account_balance">账户余额</string>
+    <string name="diamond_balance">%1$s&#160;钻</string>
+    <string name="gold_guard">金牌守护</string>
+    <string name="gold">金牌</string>
+    <string name="silver_guard">银牌守护</string>
+    <string name="silver">银牌</string>
+    <string name="recharge_guard_successful">开通守护成功</string>
+    <string name="guard_type_not_null">你还没有选择开通的守护类型</string>
+    <string name="guard_seat">守护坐席</string>
+    <string name="report">举报</string>
+    <string name="else_want_to_say">其他想说的…</string>
+    <string name="not_yet_select_report_type">你还没有选择举报类型</string>
+    <string name="report_content_not_null">举报内容不能为空</string>
+    <string name="report_successful">举报成功</string>
+    <string name="day_list">日榜</string>
+    <string name="week_list">周榜</string>
+    <string name="month_list">月榜</string>
+    <string name="get_user_list_failed">获取观众信息失败，请重试</string>
+    <string name="contribution_value">贡献&#160;&#160;%1$s</string>
+    <string name="report_successful_description">我们已收到您的举报内容会根据您反映的情况进行审查，感谢您的支持！</string>
+
+    <!--个人主页-->
+    <string name="private_chat">私聊TA</string>
+    <string name="follow_anchor">关注的主播</string>
+    <string name="anchor_notice">主播公告</string>
+    <string name="nothing_left">TA很懒，什么都没有留下</string>
+    <string name="hes_follow">TA的关注</string>
+    <string name="hes_fans">TA的粉丝</string>
+
+    <!--充值钻石-->
+    <string name="my_account_balance">账户余额：%1$s</string>
+    <string name="account_details">明细</string>
+    <string name="recharge">充值</string>
+    <string name="diamond">钻石</string>
+    <string name="diamond_number">%1$s&#160;钻石</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="wxpay">微信支付</string>
+    <string name="go_pay">立即支付</string>
+    <string name="pay_method">支付方式</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="pay_cancel">支付取消</string>
+    <string name="select_recharge_numer">请选择充值数量</string>
+    <string name="select_pay_way">请选择支付方式</string>
+    <!--明细-->
+    <string name="profit">收益</string>
+    <!--收益-->
+    <string name="total_profit_of_month">当月累计收益(元)</string>
+    <string name="profit_auto_to_wallet_balance">收益自动转至钱包余额</string>
+    <!--个人资料-->
+    <string name="personal_data">个人资料</string>
+    <string name="modify_avatar">修改头像</string>
+    <string name="enter_the_nickname">填写昵称</string>
+    <string name="please_enter_the_nickname">请输入昵称</string>
+    <string name="nickname">昵称</string>
+    <string name="hobby">爱好</string>
+    <string name="enter_the_hobby">请填写爱好</string>
+    <string name="receive_addrss">收货地址</string>
+    <string name="modify_phone_number">更改手机</string>
+    <string name="authentication">认证</string>
+    <string name="signature">个性签名</string>
+    <string name="enter_the_signature">填写个性签名</string>
+    <!--我的等级-->
+    <string name="user_level">用户等级</string>
+    <string name="anchor_level">主播等级</string>
+    <string name="defeated_users">击败了%1$s&#037;&#037;的用户</string>
+    <string name="vip_privilege">会员特权</string>
+    <string name="level_rule">等级规则</string>
+    <!--我的打赏-->
+    <string name="auto_clear_record">自动清除7天前记录</string>
+    <!--我的打赏-->
+    <string name="invite">邀请</string>
+
+    <!--会员等级-->
+    <string name="user_level_guide_category">
+        会员共分为5个等级，分别为：普通卡会员、银卡会员、金卡会员、钻石卡会员、至尊卡会员。</string>
+    <string name="user_level_guide_upgrade">
+        会员级别的升降均由系统自动处理，无需申请。</string>
+    <string name="user_level_guide_level">
+        会员级别：会员级别由消费积累金额决定，消费积累金额越高会员等级越高，享受到的会员权益越大。</string>
+
+    <!--家长控制模式-->
+    <string name="authentic_info">认证信息</string>
+    <string name="parents_control">家长控制</string>
+    <string name="enter_authentic_info">输入认证信息开启家长控制</string>
+    <!--设置-->
+    <string name="account_safe">账户安全</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="service_custom">在线客服</string>
+    <string name="app_version">APP版本</string>
+    <string name="version_num">%1$s版</string>
+    <string name="complain_suggestion">投诉建议</string>
+    <string name="suggestion_description">建议描述</string>
+    <string name="log_out">退出登录</string>
+
+    <!--安全键盘输入-->
+    <string name="aToz">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="zeroTonine">1234567890</string>
+</resources>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F7F7F7"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlyt_user_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_bg">
+
+                <com.benben.commoncore.widget.CircleImageView
+                    android:id="@+id/civ_user_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_avatar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/icon_into_grey"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingRight="12dp"
+                    android:text="@string/modify_avatar"
+                    android:textColor="@color/color_999999"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llyt_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/nickname"
+                        android:textColor="@color/color_000000"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_user_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/enter_the_nickname"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/signature"
+                        android:textColor="@color/color_000000"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_user_autograph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/enter_the_signature"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llyt_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/sex"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="12dp"
+                        android:text="@string/mine_woman"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/birthday"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="12dp"
+                        android:text="1998-09-12"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/hobby"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_user_hobby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:drawablePadding="5dp"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/enter_the_hobby"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@color/white_bg"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="@string/receive_addrss"
+                    android:textColor="@color/color_text_black_33"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@mipmap/icon_into_grey"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="河南省 郑州市 二七区"
+                    android:textColor="@color/color_666666"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llyt_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/modify_phone_number"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_authentication"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/authentication"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/modify_background"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_divider" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/icon_into_grey"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/notice"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

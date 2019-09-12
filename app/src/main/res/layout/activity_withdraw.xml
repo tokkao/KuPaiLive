@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_margin="12dp"
+                    android:background="@mipmap/img_profit_top_bg">
+
+                    <TextView
+                        android:id="@+id/tv_wallet_bobi_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="可提现金额(元)"
+                        android:textColor="@color/text_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wallet_tixian_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_wallet_bobi_label"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="当前余额  ￥0.00"
+                        android:textColor="@color/text_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wallet_tixian_shuoming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/shape_wallet_tixian_bg"
+                        android:drawableRight="@mipmap/icon_jiantoub"
+                        android:drawablePadding="8dp"
+                        android:padding="10dp"
+                        android:text="提现说明"
+                        android:textColor="@color/text_white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="提现金额"
+                    android:textColor="@color/color_text_black_33"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:text="￥"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_withdraw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="6dp"
+                        android:text="0"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/line_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="bottom"
+                    android:text="提现方式"
+                    android:textColor="@color/color_text_black_33"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/icon_alipay"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="支付宝"
+                            android:textColor="@color/color_text_black_33"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ali"
+                            android:layout_width="40dp"
+                            android:layout_height="55dp"
+                            android:button="@drawable/selector_checkbox_check_status"
+                            android:checked="true"
+                            android:paddingLeft="20dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt_ali_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_gray_4radius_f5"
+                        android:hint="请输入支付宝账户"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_black_33"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/icon_wxpay"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="微信"
+                            android:textColor="@color/color_text_black_33"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_wechat"
+                            android:layout_width="40dp"
+                            android:layout_height="55dp"
+                            android:button="@drawable/selector_checkbox_check_status"
+                            android:checked="false"
+                            android:paddingLeft="20dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt_weixin_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/shape_gray_4radius_f5"
+                        android:hint="请输入微信账户"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/color_text_black_33"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_wxpay"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="银行卡"
+                        android:textColor="@color/color_text_black_33"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_yhk"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:button="@drawable/selector_checkbox_check_status"
+                        android:checked="false"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/shape_red_radius8_ff6261"
+                android:text="立即提现"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

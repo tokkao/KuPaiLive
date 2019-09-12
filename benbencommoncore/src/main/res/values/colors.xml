@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color_text_black_33">#333333</color>
+    <color name="color_text_black_66">#666666</color>
+    <color name="color_text_gray_99">#999999</color>
+
+    <!--高亮色彩 选中状态颜色-->
+    <color name="color_status_active_b55ef5">#B55EF5</color>
+    <color name="half_transparent_bg">#9a000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="main_text_color">#444444</color>
+    <color name="assist_text_color">#999999</color>
+    <color name="assist_text_color_2">#888888</color>
+    <color name="assist_text_color_3">#333333</color>
+    <color name="title_center_text_color">#333333</color>
+    <color name="text_white">#ffffff</color>
+    <color name="white_bg">#ffffff</color>
+    <color name="line_gray">#F3F3F3</color>
+    <color name="title_bar_text_color">#000</color>
+    <!-- title bar 背景色 -->
+    <color name="color_title_bar_bg">#ffffff</color>
+    <color name="color_activity_default_bg">#ffffff</color>
+    <!--pop的默认背景-->
+    <color name="color_pop_default_bg">#66000000</color>
+
+    <!--  wanghk add color -->
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_FE4918">#FE4918</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_B55EF5">#B55EF5</color>
+    <color name="color_737373">#737373</color>
+    <color name="color_F45552">#F45552</color>
+    <color name="color_111111">#111111</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_9660F8">#9660F8</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+
+
+</resources>

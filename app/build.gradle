@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.benben.kupaizhibo"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk     {
+            //设置支持的so库架构
+            abiFilters "armeabi" ,"armeabi-v7a","x86"
+//            , "arm64-v8a", "x86", " arm64-v8a", "x86_64"
+        }
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.benben.kupaizhibo.db'
+        targetGenDir 'src/main/java'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('kupaizhibo.jks')
+            storePassword '123456'
+            keyAlias = 'key0'
+            keyPassword '123456'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api project(':benbencommoncore')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //微信支付
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //支付宝支付
+    implementation files('libs/alipaySdk-20180601.jar')
+    //版本更新
+    implementation project(path: ':updateapputils')
+    //3d滚轮选择
+    implementation project(path: ':wheelview')
+    //时间选择
+    implementation project(path: ':pickerview')
+    //环信
+    implementation project(':easemob_lib')
+    implementation files('libs/umeng-common-2.0.2.jar')
+    implementation files('libs/umeng-share-core-6.9.4.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.4.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.4.jar')
+    implementation files('libs/umeng-sharetool-6.9.4.jar')
+    //可修改选中字体大小TabLayout
+    implementation 'com.androidkun:XTabLayout:1.1.4'
+    //ios switchbutton
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    //增加dex文件
+    implementation 'com.android.support:multidex:1.0.3'
+    //照片选择/拍照
+    implementation 'org.devio.takephoto:takephoto_library:4.1.0'
+    //赠送小礼物的动画
+    implementation 'cn.qssq666:giftanim:0.4'
+    implementation project(':hiframeanimationlib')
+    implementation('io.socket:socket.io-client:1.0.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    // 导入腾讯云直播 SDK aar
+    api(name: 'LiteAVSDK_Professional_6.3.7089', ext: 'aar')
+    implementation files('libs/umeng-share-sina-simplify-6.9.4.jar')
+    implementation files('libs/upload/xstream-1.4.7.jar')
+    implementation files('libs/upload/qcloud-foundation-1.5.1.jar')
+    implementation files('libs/upload/cosxml-5.4.10.jar')
+    implementation files('libs/upload/bolts-tasks-1.4.0.jar')
+
+    //腾讯bugly
+    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+//    implementation 'com.king.view:flutteringlayout:1.1.0'
+    api project(':flutterlayoutlib')
+}

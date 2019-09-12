@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:id="@+id/rlyt_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="17dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp">
+
+                <com.benben.commoncore.widget.CircleImageView
+                    android:id="@+id/civ_user_photo"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_avatar"
+                    app:civ_border_color="@color/white_bg"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/civ_user_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/civ_user_photo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:text="人生若只如初见"
+                        android:textColor="@color/text_white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_other_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="北京  5.4粉丝"
+                        android:textColor="@color/text_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_close_live" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_guard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlyt_user_info"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/icon_guard"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlyt_user_info"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+
+                <TextView
+                    android:id="@+id/tv_viewer_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewer_number"
+                    android:textColor="@color/color_FFFFFF" />
+
+            </LinearLayout>
+
+            <com.benben.kupaizhibo.widget.RollAdsLayout
+                android:id="@+id/roll_ads_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/rlyt_user_info"
+                android:layout_centerHorizontal="true"
+                android:minWidth="80dp"
+                android:visibility="invisible" />
+
+            <!--小礼物动画-->
+
+            <cn.qssq666.giftmodule.periscope.GiftAnimLayout
+                android:id="@+id/galt_little_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rlv_chat_info"
+                android:layout_marginBottom="30dp" />
+
+            <org.limlee.hiframeanimationlib.FrameAnimationView
+                android:id="@+id/frame_animation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+            </org.limlee.hiframeanimationlib.FrameAnimationView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv_chat_info"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_above="@id/llyt_options"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="80dp" />
+
+            <TextView
+                android:id="@+id/tv_current_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/llyt_options"
+                android:text="0"/>
+            <!--底部操作按钮-->
+            <LinearLayout
+                android:id="@+id/llyt_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:clipChildren="true"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_microphone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_camera_live" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_gift"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_profit" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_sharing_live" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_beauty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_beauty" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

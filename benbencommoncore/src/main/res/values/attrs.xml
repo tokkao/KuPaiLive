@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomItemBar">
+        <attr name="background_color" format="reference|integer" />
+        <attr name="left_layout_visible" format="boolean" />
+        <attr name="custom_btn_visible" format="boolean" />
+        <attr name="right_image_visible" format="boolean" />
+        <attr name="title_text" format="string" />
+        <attr name="title_text_color" format="color" />
+        <attr name="right_tv_text" format="string" />
+        <attr name="right_tv_text_color" format="color" />
+        <attr name="left_image_drawable" format="reference|integer" />
+        <attr name="right_image_drawable" format="reference|integer" />
+    </declare-styleable>
+    <declare-styleable name="TimeBtn">
+        <attr name="textColorNotFocused" format="integer" />
+        <attr name="textColorFocused" format="integer" />
+        <attr name="textColorPressed" format="integer" />
+        <attr name="time" format="integer" />
+    </declare-styleable>
+
+    <!--BGABadgeview 属性-->
+    <declare-styleable name="BGABadgeView">
+        <!-- 徽章背景色 -->
+        <attr name="badge_bgColor" format="reference|color" />
+        <!-- 徽章文本的颜色 -->
+        <attr name="badge_textColor" format="reference|color" />
+        <!-- 徽章文本字体大小 -->
+        <attr name="badge_textSize" format="reference|dimension" />
+        <!-- 徽章背景与宿主控件上下边缘间距离 -->
+        <attr name="badge_verticalMargin" format="reference|dimension" />
+        <!-- 徽章背景与宿主控件左右边缘间距离 -->
+        <attr name="badge_horizontalMargin" format="reference|dimension" />
+        <!-- 徽章文本边缘与徽章背景边缘间的距离 -->
+        <attr name="badge_padding" format="reference|dimension" />
+        <!-- 徽章在宿主控件中的位置 -->
+        <attr name="badge_gravity" format="enum">
+            <enum name="rightTop" value="0" />
+            <enum name="rightCenter" value="1" />
+            <enum name="rightBottom" value="2" />
+        </attr>
+        <!-- 是否可以拖拽删除徽章 -->
+        <attr name="badge_dragable" format="boolean" />
+        <!-- 拖拽徽章超出轨迹范围后，再次放回到轨迹范围时，是否恢复轨迹 -->
+        <attr name="badge_isResumeTravel" format="boolean" />
+        <!-- 徽章描边宽度 -->
+        <attr name="badge_borderWidth" format="reference|dimension" />
+        <!-- 徽章描边颜色 -->
+        <attr name="badge_borderColor" format="reference|color" />
+        <!-- 触发开始拖拽徽章事件的扩展触摸距离 -->
+        <attr name="badge_dragExtra" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="integer|reference"/>
+        <attr name="type" format="integer|reference"/>
+    </declare-styleable>
+
+</resources>

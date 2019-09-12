@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:easemob="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <com.hyphenate.helpdesk.easeui.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        easemob:titleBarLeftImage="@drawable/iv_back" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="1px"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_menu"
+        android:layout_below="@id/title_bar">
+
+        <com.hyphenate.helpdesk.easeui.widget.MessageList
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            easemob:msgListShowUserAvatar="true" />
+
+    </RelativeLayout>
+
+    <com.hyphenate.helpdesk.easeui.widget.EaseChatInputMenu
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/tv_tip_waitcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/input_menu"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
